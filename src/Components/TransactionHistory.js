@@ -1,12 +1,17 @@
 import React from 'react'
 
-function TransactionHistory() {
+
+
+function TransactionHistory({ transactions }) {
   return (
     <div>
       <h3>Transaction History</h3>
       <ul>
-        <li>Salary-$3000</li>
-        <li>Gorcery-$100</li>
+        {
+          transactions.map(data =>
+            <li key={data.id}>{data.name} ${data.amount} <button>x</button></li>
+          )
+        }
       </ul>
     </div>
   )
