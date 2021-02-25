@@ -1,9 +1,10 @@
 import './App.css';
+import ExpenseTracker from './Components/ExpenseTracker';
 
 function App() {
   return (
     <div className="App">
-      Expense Tracker App
+      <ExpenseTracker />
     </div>
   );
 }
